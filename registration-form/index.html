@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="bg-container">
+        <h2 class="title">Student Registration Form</h2>
+        <form action="#">
+            <label for="name">Name:</label>
+            <input type="text" id="name" class="input-form" name="name" required><br><br>
+            <span class="focus"></span>
+            <label for="email">Email:</label>
+            <input type="email" id="email" class="input-form" name="email" required><br><br>
+
+            <label>Work Status:</label>
+            <input type="radio" id="active" name="work_status" class="radio-form" value="Active" required>
+            <label for="active">Active</label>
+            <input type="radio" id="inactive" name="work_status" class="radio-form" value="Inactive" required>
+            <label for="inactive">Inactive</label><br><br>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" class="input-form" name="mobile" required><br><br>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" class="radio-form" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" class="radio-form" value="Female" required>
+            <label for="female">Female</label><br><br>
+
+            <label for="skills">Skills:</label>
+            <input type="checkbox" id="html" class="radio-form" name="skills[]" value="HTML">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" class="radio-form" name="skills[]" value="CSS">
+            <label for="css">CSS</label>
+            <input type="checkbox" id="js" class="radio-form" name="skills[]" value="JavaScript">
+            <label for="js">JavaScript</label><br><br>
+
+            <button type="submit" class="button" value="Submit">Submit</button>
+            <button type="button" class="button" id="button" value="clear">Clear</button>
+        </form>
+    </div>
+
+    <h2 class="results">Students Data</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Work Status</th>
+            <th>Mobile Number</th>
+            <th>Gender</th>
+            <th>Skills</th>
+        </tr>
+        <!-- Data will be displayed here dynamically -->
+    </table>
+    <script src="index.js"></script>
+</body>
+
+</html>
